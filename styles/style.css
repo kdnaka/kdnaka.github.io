@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+@supports not (overscroll-behavior: auto) {
+    html {
+        overflow-y: hidden;
+    }
+
+    body {
+        box-sizing: border-box;
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    background: #0a1319 url(../images/gear-pattern.png) repeat fixed;
+    color: whitesmoke;
+    overscroll-behavior-y: none;
+}
+
+header,
+main,
+footer {
+    padding: 25px;
+}
+
+header {
+    background: linear-gradient(#181e22, 80%, #0a0d0e);
+    border-radius: 0 0 10px 40px;
+    box-shadow: 10px 5px 5px black;
+}
+
+nav,
+ul {
+    margin: 0;
+}
+
+aside,
+section {
+    background: rgba(24, 30, 34, 0.95);
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    padding: 25px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+footer>p {
+    margin: 0;
+}

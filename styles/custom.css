@@ -1,0 +1,17 @@
+/* You can customize theme styles here */
+.header .navbar-brand span:nth-child(2) {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#experience .btn-frameless {
+    border-color: #000;
+}
+
+#experience .btn-frameless:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.footer a {
+    color: #fff;
+}

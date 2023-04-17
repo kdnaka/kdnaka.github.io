@@ -1,7 +1,109 @@
 /* You can customize theme styles here */
-.header .navbar-brand span:nth-child(2) {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+.header .navbar {
+    justify-content: space-between;
 }
+
+.header .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo__text {
+    color: #000;
+    font-weight: 700;
+}
+
+#logo__cursor {
+    margin-top: 0;
+    margin-left: 5px;
+    display: inline-block;
+    width: 11px;
+    height: 22px;
+    background: #fe5186;
+    border-radius: 1px;
+    animation: cursor 1.25s 4;
+}
+
+@media (min-width: 768px) {
+    #logo__cursor {
+        width: 15px;
+        height: 30px;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.header .top-visible {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-menu {
+    border-right: 1px solid;
+    padding-right: 0.75rem;
+}
+
+.top-menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu__list li:not(:first-of-type) {
+    margin-left: .75rem;
+}
+
+.top-menu__list a {
+    border: none;
+}
+
+.header .navbar .navbar-toggler {
+    position: static;
+}
+
+.header .navbar-collapse {
+    margin-top: 15px;
+}
+
+.header .navbar .non-link {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0 0 10px;
+}
+
+.header .navbar .nav-item:first-child {
+    border-top: none;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #eee;
+}
+
+/* end header */
 
 #experience .btn-frameless {
     border-color: #000;

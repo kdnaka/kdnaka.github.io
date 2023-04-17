@@ -239,27 +239,43 @@
     <div class="container rad-fade-in">
       <nav class="navbar navbar-expand-lg navbar-light p-0">
         <a class="navbar-brand" href="">
-          <span>Kenneth</span>
-          <span>Nakashimo</span>
+          <span id="logo__text">&gt;&#95;</span>
+          <div id="logo__cursor"></div>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="top-visible">
+          <div class="top-menu">
+            <ul class="top-menu__list">
+              <li>
+                <a href="#">Top</a>
+              </li>
+              <li>
+                <a href="">Card</a>
+              </li>
+              <li>
+                <div>EN</div>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </span>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item non-link">Jump to:</li>
             <li class="nav-item">
-              <a class="nav-link" href="">HOME</a>
+              <a data-scroll class="nav-link" href="#about">Bio</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#about">ABOUT</a>
+              <a data-scroll class="nav-link" href="#skill">Skill</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#portfolio">PORTFOLIO</a>
+              <a data-scroll class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="#contact">CONTACT</a>
+              <a data-scroll class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -458,8 +474,9 @@
     <div class="container">
       <div class="footer__left">
         <div class="footer__copy">
-          This site is open source. Licensed under GNU AGPLv3 &vert; &copy; 2023 Theme by <a target='_blank'
-            href='https://github.com/radity/raditian-free-hugo-theme'>Raditian</a>. All rights reserved.
+          This site is open source. Licensed under GNU AGPLv3 &vert; &copy; 2023 Themes by <a target='_blank'
+            href='https://github.com/radity/raditian-free-hugo-theme'>Raditian</a> and <a target='_blank'
+            href='https://github.com/panr/hugo-theme-hello-friend'>Panr</a>. All rights reserved.
         </div>
       </div>
       <div class="footer__links">

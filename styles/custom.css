@@ -127,7 +127,6 @@
 }
 
 @media (min-width: 1200px) {
-
     .top-menu__list a,
     .top-menu__list div {
         padding: 0 20px;
@@ -140,6 +139,7 @@
 .rad-showcase .button-spacing {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -177,5 +177,11 @@ svg.flip-color {
 
 /* end main section */
 /* footer */
+
+@media (max-width: 992px) {
+    .footer .footer__copy {
+        white-space: normal;
+    }
+}
 
 /* end footer */

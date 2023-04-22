@@ -1,4 +1,10 @@
 /* You can customize theme styles here */
+:root {
+    --prim-color: #007bff
+}
+
+/* header */
+
 .header .navbar {
     justify-content: space-between;
 }
@@ -76,6 +82,10 @@
     padding: 0 .5rem;
 }
 
+.top-menu__list a:hover {
+    text-decoration: underline;
+}
+
 .header .navbar .navbar-toggler {
     position: static;
 }
@@ -127,6 +137,7 @@
 }
 
 @media (min-width: 1200px) {
+
     .top-menu__list a,
     .top-menu__list div {
         padding: 0 20px;
@@ -136,11 +147,19 @@
 /* end header */
 /* main section */
 
+.rad-showcase .highlight-text {
+    color: var(--prim-color, blue);
+}
+
 .rad-showcase .button-spacing {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.ln-blue {
+    background-color: #0077b5;
 }
 
 .rad-showcase .btn-frameless {
@@ -150,10 +169,6 @@
 .rad-showcase .btn-frameless:hover {
     color: #fff;
     background-color: #000;
-}
-
-.footer a {
-    color: #fff;
 }
 
 .rad-showcase a.btn {
@@ -175,6 +190,32 @@ svg.flip-color {
     fill: #000;
 }
 
+
+.clr-wrap-blue {
+    position: relative;
+}
+
+.clr-wrap-blue:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 80, 102, 0.1);
+    border-radius: 15px;
+}
+
+.rad-showcase__bg--mobile {
+    margin-top: 40px;
+    padding: 0 24px;
+}
+
+.rad-showcase__bg--mobile img {
+    max-width: 721px;
+    height: auto;
+    margin-top: 0;
+    border-radius: 15px;
+}
+
 /* end main section */
 /* footer */
 
@@ -182,6 +223,10 @@ svg.flip-color {
     .footer .footer__copy {
         white-space: normal;
     }
+}
+
+.footer a {
+    color: #fff;
 }
 
 /* end footer */

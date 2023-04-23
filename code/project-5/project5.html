@@ -656,6 +656,9 @@ input[type=range] {
 <div class="control"><span id="shininess-label">Shininess:</span><span id="shininess-value">1</span><input id="shininess-exp" type="range" min="0" max="100" value="50" oninput="SetShininess(this)"/></div>
 </div>
 <div class="control-group">
+<div class="control">Download OBJ:<br/><a href="teapot.obj" download><button type="button">#1</button></a><a href="nyra.obj" download><button type="button">#2</button></a></div>
+<div class="control">Download Texture:<br/><a href="bricks.png" download><button type="button">#1</button></a><a href="nyra.png" download><button type="button">#2</button></a></div>
+<br/>
 <div class="control">OBJ model:<br/><input id="obj" type="file" onchange="LoadObj(this)" accept=".obj"/></div>
 <div class="control">Texture image:<br/><input id="texture" type="file" onchange="LoadTexture(this)" accept="image/*"/></div>
 </div>

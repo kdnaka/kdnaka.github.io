@@ -456,9 +456,9 @@ body{
 	filter:				drop-shadow(0px 0px 4px white);
 }
 
-.ui-widget-content{
-	/*color: var(--font-color) !important;*/
-}
+/* .ui-widget-content{
+	color: var(--font-color) !important;
+} */
 
 .accordion > h3{
 	background-color: var(--bg-color-2) !important;
@@ -689,6 +689,10 @@ body{
 	width: 100%;
 }
 
+.cesium-widget-credits {
+	z-index: 2;
+}
+
 
 
 
@@ -780,9 +784,9 @@ body{
 	background-color: var(--bg-color);
 }
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
 
-}
+} */
 
 ::-webkit-scrollbar-thumb {
 	background-color: var(--color-1);
